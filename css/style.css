@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(150deg, yellow, red);
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+#container{
+    position: relative;
+    top: 50px;
+    width: max-content;
+    height: auto;
+    margin: auto;
+}
+
+#cantactForm{
+    margin: auto;
+    border-radius: 50px;
+}
+
+input:not(#submitButton), textarea, select{
+    outline: none;
+    border: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+}
+
+input, select{
+    width: 15em;
+}
+
+fieldset{
+    border: rgba(255, 0, 43, 0.671) 3px solid;
+    border-radius: 20px;
+    width: max-content;
+    height: auto;
+}
+
+#submitButton{
+    font-size: 20px;
+    width: 15em;
+    color: white;
+    background-color: black;
+    transition: 1s;
+    outline: none;
+    border: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#submitButton:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+}
+
+#name-hover, #email-hover, #password-hover, #tel-hover, #track-hover, #message-hover{
+    transition: 1s;
+    width: 0px;
+    height: 7px;
+    background-color: red;
+    margin: auto;
+}
+
+#name-hover, #email-hover, #password-hover, #tel-hover{
+    position: relative;
+    bottom: 1px;
+}
+
+#message-hover{
+    position: relative;
+    bottom: 4px;
+}
+
+#name:hover + #name-hover{
+    width: 10em;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#email:hover + #email-hover{
+    width: 10em;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#password:hover + #password-hover{
+    width: 10em;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#tel:hover + #tel-hover{
+    width: 10em;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#track:hover + #track-hover{
+    width: 10em;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#message:hover + #message-hover{
+    width: 15.75em;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
